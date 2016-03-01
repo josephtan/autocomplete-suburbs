@@ -1,4 +1,4 @@
-body {
+.bg-gray {
 	padding: 10px;
 	background: #eaeaea;
 	text-align: center;
@@ -33,45 +33,30 @@ body {
 	padding: 10px;
 	text-align: right;
 }
-.footer a {
-	color: #999999;
-	text-decoration: none;
-}
 .footer a:hover {
 	text-decoration: underline;
 }
 .label_div {
-	width: 120px;
-	float: left;
-	line-height: 28px;
+	display: inline-block;
+	margin-right: 2%;
 }
 .input_container {
-	height: 30px;
-	float: left;
+	display: inline-block;
+	padding:15px;
+	max-width: 50%;
 }
-.input_container input {
-	height: 20px;
-	width: 200px;
+.ui-autocomplete-input{
 	padding: 3px;
-	border: 1px solid #cccccc;
 	border-radius: 0;
 }
-.input_container ul {
-	width: 206px;
-	border: 1px solid #eaeaea;
-	position: absolute;
-	z-index: 9;
-	background: #f3f3f3;
-	list-style: none;
-}
+
 .input_container ul li {
 	padding: 2px;
 }
+
 .input_container ul li:hover {
 	background: #eaeaea;
 }
 #suburb_list_id {
 	display: none;
 }
-
-
