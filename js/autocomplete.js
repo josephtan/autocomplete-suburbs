@@ -34,7 +34,9 @@ var autocomplete = function() {
                     return {
                         value: item.description,
                         label: item.description,
-                        abbrev:item.postcode
+                        abbrev:item.postcode,
+                        lat:item.lat,
+                        long:item.lon
                     };
                 }
             });
@@ -44,18 +46,9 @@ var autocomplete = function() {
             var selectedObj = ui.item;
             $("#addressList").val(selectedObj.label);
             $('#suburbID').val(selectedObj.abbrev);
+            $('#latitude').val(selectedObj.lat);
+            $('#longitude').val(selectedObj.long);
         },
-        /*
-         open: function($event, ui) {
-         var $widget = $("ul.ui-autocomplete");
-         var $input = $("#suburb");
-         var position = $input.position();
-
-         $("#container_suburb").append($widget);
-
-         $widget.css("left", position.left);
-         $widget.css("top", position.top + $input.height());
-         },*/
         minLength: 2
 
     });
