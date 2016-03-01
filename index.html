@@ -2,7 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
+<title>JQuery UI Autocomplete</title>
+<link rel="stylesheet" href="css/normalize.css" />
 <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -11,18 +12,20 @@
 <script type="text/javascript" src="js/autocomplete.js"></script>
 </head>
 
-<body class="bg-gray">
-    <div class="container">
+<body class="bg-smoke">
+    <div class="container bg-white 	border-radius-10">
         <div class="header">
         </div><!-- header -->
-        <h1 class="main_title"> Autocomplete suburb postcodes</h1>
+        <h1 class="main_title bg-gray white-color "> Autocomplete suburb postcodes</h1>
         <div class="content">
             <form>
                 <div class="label_div">Enter suburb postcode : </div>
                 <div class="input_container">
-                        <input name="suburb" id="suburb" type="text">
+                        <input name="suburb" id="suburb" type="text" class="border-1-gray">
                         <input type="hidden" id="suburbID">
                         <input type="hidden" id="addressList">
+                        <input type="hidden" id="latitude">
+                        <input type="hidden" id="longitude">
                 </div>
             </form>
         </div><!-- content -->    
