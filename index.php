@@ -11,7 +11,7 @@
 <script type="text/javascript" src="js/autocomplete.js"></script>
 </head>
 
-<body>
+<body class="bg-gray">
     <div class="container">
         <div class="header">
         </div><!-- header -->
