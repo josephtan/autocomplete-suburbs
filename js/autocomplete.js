@@ -21,9 +21,9 @@ $.ajax({
 });
 
 
-var autocomplete = function() {
+var autocomplete = function(suburbInput) {
 
-    $("#suburb").autocomplete({
+    $(suburbInput).autocomplete({
         delay: 0,
 
         source: function (request, response) {
@@ -52,16 +52,17 @@ var autocomplete = function() {
         minLength: 2
 
     });
-}
+};
 
-$(document).ready(function() {
-
-    autocomplete();
-    $("#suburb").on("focusout", function(){
-        if($("#suburb").val() !=""){
-        }else{
-            $("#suburb").val("");
+var clearIfFilled = function(inputField){
+    $(inputField).on("click", function(){
+        if($(inputField).val() !=""){
+            $(inputField).val("");
         }
     });
+};
 
+$(document).ready(function() {
+    autocomplete("#suburb");
+    clearIfFilled("#suburb");
 });
